@@ -1,0 +1,11 @@
+program exemplo; {este eh um exemplo}
+var
+   nota1: integer;
+   nota2: integer;
+   total: real;
+
+begin
+   nota1:=10;
+   nota2:=20;
+   total:=nota1+nota2;
+end.
