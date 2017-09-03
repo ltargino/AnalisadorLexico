@@ -21,8 +21,13 @@ public class Main {
 		else {
 			AnalisadorLexico analisador_lexico = new AnalisadorLexico();
 	
-			TabelaDeSimbolos tabela_de_simbolos = analisador_lexico.analisar(source_code);
-			tabela_de_simbolos.imprimirTabelaDeSimbolos();
+			TabelaDeSimbolos tabela_de_simbolos;
+			try {
+				tabela_de_simbolos = analisador_lexico.analisar(source_code);
+				tabela_de_simbolos.imprimirTabelaDeSimbolos();
+			} catch (Exception e) {
+				System.out.println("Ocorreu um erro!\n Detalhes: " + e.getMessage());
+			}
 		}
 	}
 	

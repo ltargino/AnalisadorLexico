@@ -7,7 +7,7 @@ import br.unipe.cc.p6.compiladores.analisadorlexico.util.Constants;
 
 public class AnalisadorLexico {
 	
-	public TabelaDeSimbolos analisar(String input) {
+	public TabelaDeSimbolos analisar(String input) throws Exception {
 		TabelaDeSimbolos result = new TabelaDeSimbolos();
 		Long lineCount = new Long(0);
 		
@@ -126,7 +126,7 @@ public class AnalisadorLexico {
 							palavra_auxiliar = "";
 							continue;
 						}
-		
+						
 					}
 					if (delimitadorParaAdicionar != null) {
 						result.getTabela().add(new Simbolo(delimitadorParaAdicionar, "Delimitador", lineCount.toString()));
@@ -136,7 +136,7 @@ public class AnalisadorLexico {
 			}
 		
 		} catch(Exception ex) {
-			
+			throw ex;
 		}
 		
 		return result;
