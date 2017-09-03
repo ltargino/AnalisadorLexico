@@ -52,7 +52,7 @@ public class AnalisadorLexico {
 					} else {
 					
 						char c = linha.charAt(i);
-	
+						
 						if ( c == Constants.comandoDeAtribuicao.charAt(0) && linha.charAt(i+1) == Constants.comandoDeAtribuicao.charAt(1) ) {
 							//result.getTabela().add(new Simbolo(palavra_auxiliar.replace(Constants.comandoDeAtribuicao, ""), "Identificador", lineCount.toString()));
 							result.getTabela().add(new Simbolo(Constants.comandoDeAtribuicao, "Comando de Atribuição", lineCount.toString()));
