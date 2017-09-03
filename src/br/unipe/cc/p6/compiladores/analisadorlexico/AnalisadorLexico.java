@@ -96,13 +96,15 @@ public class AnalisadorLexico {
 								palavra_auxiliar = "";
 								continue;
 							}
+						} else {
+							// Numero Reais
+							if ( Pattern.matches(Constants.numeroReais, palavra_auxiliar) ) {
+								if (!Pattern.matches(Constants.numeroReais, ""+linha.charAt(i+1))) {
+									result.getTabela().add(new Simbolo(palavra_auxiliar, "Número Real", lineCount.toString()));
+									continue;
+								}
+							}
 						}
-						
-						// Numero Reais
-						//if ( Pattern.matches(Constants.numeroReais, palavra) ) {
-						//result.getTabela().add(new Simbolo(palavra, "Número Real", lineCount.toString()));
-						//continue;
-						//}
 						
 						// Operadores Relacionais
 						if ( Constants.operadoresRelacionais.contains(palavra_auxiliar) ) {

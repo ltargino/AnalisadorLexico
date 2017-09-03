@@ -13,7 +13,7 @@ public final class Constants {
 	
 	public static final String numerosInteiros = "[0-9]+";
 	
-	public static final String numeroReais = "";
+	public static final String numeroReais = "((\\+|-)?([0-9]+)(\\.[0-9]+)?)|((\\+|-)?\\.?[0-9]+)";
 	
 	public static final List<String> delimitadores = Arrays.asList( ";", ".", ":", "(", ")", "," );
 	
@@ -29,19 +29,4 @@ public final class Constants {
 	
 	public static final char finalComment = '}';
 	
-	public static final String inputSourceCode = 
-	
-		  "program exemplo; {este eh um exemplo}" + breakLine
-		+ "var" + breakLine
-		+ "   nota1: integer;" + breakLine
-		+ "   nota2: integer;" + breakLine
-		+ "   total: real;" + breakLine
-		+ "" + breakLine
-		+"begin" + breakLine
-		+ "   nota1:=10;" + breakLine
-		+ "   nota2:=20;" + breakLine
-		+ "   total:=nota1+nota2;" + breakLine
-		+ "end." + breakLine
-	
-	;
 }
