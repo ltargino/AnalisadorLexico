@@ -1,4 +1,4 @@
-package br.unipe.cc.p6.compiladores.analisadorlexico.util;
+package br.unipe.cc.p6.compiladores.comum;
 
 public class Replicator {
 
@@ -10,6 +10,15 @@ public class Replicator {
 		
 		return result;
 	}
+	
+	public static String leftReplicate(int size, char charToReplicate) {
+		String result = "";
+		
+		for (int i = 0; i < size; i++)
+			result += charToReplicate;
+		
+		return result;
+	}	
 	
 	public static String replicate(Long size, char charToReplicate) {
 		String result = "";

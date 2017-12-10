@@ -1,9 +1,7 @@
-package br.unipe.cc.p6.compiladores.analisadorlexico;
+package br.unipe.cc.p6.compiladores.comum;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import br.unipe.cc.p6.compiladores.analisadorlexico.util.Replicator;
 
 public class TabelaDeSimbolos {
 
@@ -14,7 +12,7 @@ public class TabelaDeSimbolos {
 	}
 	
 	public void imprimirTabelaDeSimbolos() {
-		
+		System.out.println("TABELA DE SIMBOLOS");
 		System.out.println(   "| "
 							+ Replicator.replicate(new Long(22), ' ')
 		                    + "Lexema"
@@ -27,7 +25,7 @@ public class TabelaDeSimbolos {
 		                    + Replicator.replicate(new Long(22), ' ')
 		                    + "Linha"
 		                    + Replicator.replicate(new Long(22), ' ')
-		                    + "|");
+		                    + "|" );
 		
 		for (Simbolo simbolo : tabela) 
 			System.out.println(simbolo);

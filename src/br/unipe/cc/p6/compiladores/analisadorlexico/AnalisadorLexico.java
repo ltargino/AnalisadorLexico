@@ -3,7 +3,9 @@ package br.unipe.cc.p6.compiladores.analisadorlexico;
 
 import java.util.regex.Pattern;
 
-import br.unipe.cc.p6.compiladores.analisadorlexico.util.Constants;
+import br.unipe.cc.p6.compiladores.comum.Constants;
+import br.unipe.cc.p6.compiladores.comum.Simbolo;
+import br.unipe.cc.p6.compiladores.comum.TabelaDeSimbolos;
 
 public class AnalisadorLexico {
 	

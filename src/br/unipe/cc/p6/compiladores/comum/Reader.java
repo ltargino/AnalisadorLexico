@@ -1,4 +1,4 @@
-package br.unipe.cc.p6.compiladores.analisadorlexico.util;
+package br.unipe.cc.p6.compiladores.comum;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

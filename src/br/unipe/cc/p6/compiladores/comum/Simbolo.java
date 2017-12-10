@@ -1,6 +1,4 @@
-package br.unipe.cc.p6.compiladores.analisadorlexico;
-
-import br.unipe.cc.p6.compiladores.analisadorlexico.util.Replicator;
+package br.unipe.cc.p6.compiladores.comum;
 
 public class Simbolo {
 	
@@ -26,6 +24,18 @@ public class Simbolo {
 		linhaDeSimbolo += "|";
 		
 		return linhaDeSimbolo;
+	}
+	
+	public String getLexema() {
+		return lexema;
+	}
+
+	public String getToken() {
+		return token;
+	}
+
+	public String getLinha() {
+		return linha;
 	}
 	
 }
