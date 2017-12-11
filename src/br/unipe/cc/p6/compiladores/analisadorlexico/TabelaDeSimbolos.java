@@ -1,7 +1,10 @@
-package br.unipe.cc.p6.compiladores.comum;
+package br.unipe.cc.p6.compiladores.analisadorlexico;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import br.unipe.cc.p6.compiladores.comum.Replicator;
+import br.unipe.cc.p6.compiladores.comum.Simbolo;
 
 public class TabelaDeSimbolos {
 

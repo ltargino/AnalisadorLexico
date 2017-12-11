@@ -6,13 +6,16 @@ import java.util.List;
 public class No {
 
 	private List<Simbolo> dadosDoNo;
+
+	private No noPai;
 	
 	private No noEsquerdo;
 	
 	private No noDireito;
 
-	public No(){
+	public No(No noPai){
 		this.dadosDoNo = new ArrayList<Simbolo>();
+		this.noPai = noPai;
 	}
 	
 	public void adicionarNoADireita(No no){
@@ -57,6 +60,14 @@ public class No {
 
 	public void setDadosDoNo(List<Simbolo> dadosDoNo) {
 		this.dadosDoNo = dadosDoNo;
+	}
+
+	public No getNoPai() {
+		return noPai;
+	}
+
+	public void setNoPai(No noPai) {
+		this.noPai = noPai;
 	}
 	
 }
